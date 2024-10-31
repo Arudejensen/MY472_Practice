@@ -6,6 +6,12 @@
 .RData
 .RDataTmp
 
+# Csv data
+*.csv
+
+# DS_Store
+.DS_Store
+
 # User-specific files
 .Ruserdata
 
