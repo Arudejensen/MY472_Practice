@@ -171,9 +171,9 @@ computation, some can be simpler than the solution sketch here)
 # Q3 --------------------------------------------------------------------------
 # Data transformations with mutate
 ipu_clean %>%
-  _______(ip_sq = _______,
-         ________________ = _______________,
-         ip_unemployment = ___________________) %>%
+  mutate(ip_sq = ip^2,
+         ip_ln = log(ip),
+         ip_unemployment = ip*unemployment) %>%
   head()
 
 # Optional --------------------------------------------------------------------
